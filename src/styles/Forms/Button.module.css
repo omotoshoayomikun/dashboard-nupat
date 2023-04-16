@@ -1,0 +1,52 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+    padding: 12px 16px;
+    color: var(--white);
+    background: var(--light-blue);
+    font-weight: 400;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    font-family: inter-regular, sans-serif;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.mll {
+    margin-left: 11.44px;
+}
+
+.btn_black {
+    background: var(--black);
+    padding: 12px 28.5px;
+    font-size: 14px;
+    color: var(--white);
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn_add {
+    width: 100%;
+    background: #F2F4F5;
+    padding: 12px 28.5px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #7D8088;
+    border-radius: 12px;
+    outline: none;
+    border: 1px dashed #D5D5D5;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_add span {
+    margin-left: 15px;
+}

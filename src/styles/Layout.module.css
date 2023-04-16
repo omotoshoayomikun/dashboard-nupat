@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    width: 100%;
+    position: relative;
+    /* height: inherit; */
+    /* overflow-y: scroll; */
+}
+
+.side {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 272px;
+    height: 100%;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    margin-left: 272px;
+}

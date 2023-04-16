@@ -1,0 +1,79 @@
+:root {
+  --navy-blue: #1D1042;
+  --white: #FFFFFF;
+  --light-blue: #45269C;
+  --black: #000000;
+  --grey: #FCFBFC;
+}
+
+@font-face {
+  font-family: inter-regular;
+  src: url('./Fonts/inter/Inter-Regular.ttf');
+}
+
+@font-face {
+  font-family: inter-light;
+  src: url('./Fonts/inter/Inter-light.ttf');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: inter-regular;
+}
+
+.df {
+  display: flex;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+.ai-c {
+  align-items: center;
+}
+
+.jc-c {
+  justify-content: center;
+}
+
+.ai-fe {
+  align-items: flex-end;
+}
+
+.mt-18 {
+  margin-top: 18px;
+}
+
+.mb-18 {
+  margin-bottom: 18px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-57 {
+  margin-bottom: 57px;
+}
+
+.p-r {
+  position: relative;
+}
+
+.p-a {
+  position: absolute;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.mt-8 {
+  margin-top: 8px;
+}
+
+.gap-40 {
+  gap: 40px;
+}

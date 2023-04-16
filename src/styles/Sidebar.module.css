@@ -1,0 +1,64 @@
+.side_container {
+    width: inherit;
+    height: inherit;
+    background: var(--navy-blue);
+    padding: 38px 32px;
+    position: relative;
+}
+
+.nvmb {
+    margin-bottom: 24px;
+}
+
+.mxc {}
+
+.ch {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.ch ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ch a {
+    font-family: inter-regular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--white);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 16.5px 5px;
+}
+
+.ch a span {
+    margin-left: 8.6px;
+}
+
+.line {
+    width: inherit;
+    height: 1.5px;
+    margin: 32.5px 5px;
+    background: var(--white);
+    opacity: 0.5;
+}
+
+.ref {
+    opacity: 0.5;
+}
+
+.side_foot {
+    position: absolute;
+    bottom: 38px;
+    right: 0;
+    left: 0;
+    width: inherit;
+    box-sizing: border-box;
+    padding: 0 32px;
+}
