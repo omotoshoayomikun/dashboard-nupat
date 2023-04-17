@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '../styles/Dashboard.module.css';
-import { BtnAdd, BtnBlack } from './Forms/button';
+import { BtnAdd, BtnBlack } from './Forms/Button';
 import member from '/imgs/member.png'
 import { Card, SubCard } from './Forms/Card';
 function Dashboard() {

@@ -5,7 +5,7 @@ export const Button = (props) => {
 
     return (
         <>
-            <button className={styles.btn} style={props.cusStyle} >
+            <button className={styles.btn} style={props.cusStyle} onClick={props.handleClick} >
                 {
                     props.icon && (
                         <img src={props.icon} alt="" />
@@ -19,7 +19,7 @@ export const Button = (props) => {
 
 export const BtnBlack = (props) => {
     return (
-        <button className={styles.btn_black} style={props.cusStyle} >
+        <button className={styles.btn_black} style={props.cusStyle} onClick={props.handleClick} >
             <span>{props.text}</span>
         </button>
     )
@@ -27,7 +27,7 @@ export const BtnBlack = (props) => {
 
 export const BtnAdd = (props) => {
     return (
-        <button className={styles.btn_add} style={props.cusStyle} >
+        <button className={styles.btn_add} style={props.cusStyle} onClick={props.handleClick} >
             {
                 props.icon && (
                     <img src={props.icon} alt="" />

@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '../../styles/Sidebar.module.css';
-import {Button} from '../Forms/button';
+import {Button} from '../Forms/Button';
 import { sideList } from '../../../routes'
 
 

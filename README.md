@@ -6,6 +6,11 @@ The project structure is organized as follows:
 
 ```
 src/
+
+|-- Forms/
+|   |-- Button.jsx
+|   |-- Card.jsx
+|   |-- Progress.jsx
 |-- layout/
 |   |-- Layout.jsx
 |   |-- Sidebar.jsx
@@ -14,13 +19,23 @@ src/
 
 ```
 
-* src/: This is the main source folder of the project.
-* layout/: This folder contains the layout and sidebar components.
+* **src/:** This is the main source folder of the project.
+* **Forms/:** This folder contains all the forms used in this project.
+    * **Button.jsx**: This is the buttons component that contains different buttons 
+    * **Card.jsx**: This is the card component that contains cards.
+    * **Progress.jsx**: This is the progress component that contains the progress bar.
+* **layout/:** This folder contains the layout and sidebar components.
     * **Layout.jsx**: This is the main layout component that wraps around the content of the 
     * **Sidebar.jsx**: This is the sidebar component that contains navigation links and other related information.
-* Dashboard.js: This is the main dashboard component that represents the main content of the application.
+* **Dashboard.js:** This is the main dashboard component that represents the main content of the application.
 
 ### Code Base
+The **Button.jsx** is this a reusable component that is responsible for different buttons used in this project, including the add button, black button, etc.
+
+The **Card.jsx** is this a reusable component that is responsible for different cards used in this project.
+
+The **Progress.jsx** is this a reusable component that is responsible for progress bar used in this project.
+
 The **Layout.jsx** component is responsible for rendering the layout of the dashboard, including the header, sidebar, and content. It uses CSS Flexbox or Grid to create a responsive layout that adapts to different screen sizes.
 
 The **Sidebar.jsx** component renders the sidebar with navigation links and other relevant information. It may also include additional functionality like collapsing/expanding menu items, handling user authentication, etc.
