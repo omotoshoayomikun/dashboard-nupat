@@ -44,7 +44,7 @@ function Dashboard() {
     <>
       <div className={styles.container}>
         <section className={styles.top_section}>
-          <section className='df jc-sb ai-c mb-57'>
+          <section className='df jc-sb ai-c fw-w mb-57'>
             <div>
               <div className={styles.txt1}>New Campaign Run </div>
               <div className={` ${styles.txt2}`}>A new campaign launch work for brand new featur in May month</div>
@@ -54,9 +54,9 @@ function Dashboard() {
             </div>
           </section>
 
-          <section className='df jc-sb ai-c'>
+          <section className='df jc-sb ai-c fw-w '>
             <div className="df ai-c">
-              <div className="df ai-c p-r">
+              <div className="df ai-c p-r fw-w ">
                 {
                   members.map((member, i) => (
                     <div key={i} className={styles.img_cont}><img src={member} alt="" /></div>
@@ -66,13 +66,13 @@ function Dashboard() {
               <div className={styles.txt2}>8 member</div>
 
             </div>
-            <div className="df ai-c">
+            <div className="df ai-c fw-w ">
               {
                 navs.map((nav, i) => (
-                  <div key={i} className={styles.cont_list}>
+                  <a href='#' key={i} className={styles.cont_list}>
                     <img src={nav.icon} alt='' />
                     <span>{nav.text}</span>
-                  </div>
+                  </a>
                 ))
               }
             </div>
@@ -80,7 +80,7 @@ function Dashboard() {
         </section>
 
         <section className={styles.main_section}>
-          <div className="df gap-40">
+          <div className="df gap-40 fw-w ">
             {
               subCard.map((sub, i) => (
                 <div key={i} className="flex-1"><SubCard {...sub} /></div>

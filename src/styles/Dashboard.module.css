@@ -59,6 +59,7 @@
     display: flex;
     align-items: center;
     gap: 6.25px;
+    text-decoration: none;
 }
 
 /* 
