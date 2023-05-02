@@ -107,3 +107,47 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
+
+
+.menu_btn__burger {
+  position: absolute;
+  right: 0;
+  top: 14px;
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+}
+.menu_btn__burger::before {
+  content: "";
+  width: 28px;
+  height: 3px;
+  position: absolute;
+  top: -8px;
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+}
+.menu_btn__burger::after {
+  content: "";
+  width: 20px;
+  height: 3px;
+  position: absolute;
+  top: 8px;
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+}
+.menu_btn__burger.open {
+  transform: rotate(720deg);
+  background: transparent;
+}
+.menu_btn__burger.open::before {
+  transform: rotate(45deg) translate(5px, 8px);
+}
+.menu_btn__burger.open::after {
+  width: 28px;
+  transform: rotate(-45deg) translate(3px, -7px);
+}
+
+.trans {
+  transition: all 0.5s ease-in-out;
+}

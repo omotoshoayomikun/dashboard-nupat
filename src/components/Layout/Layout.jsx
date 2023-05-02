@@ -25,7 +25,7 @@ function Layout({ children }) {
           {/* SIDE BAR FOR BIG SCREEN */}
           <div className={`${styles.side} ${styles.big_screen}`}><Sidebar /></div>
           {/* SIDE BAR FOR SMALL SCREEN */}
-          <div className={`${styles.side} ${styles.small_screen}  ${barBoolean ? 'ml-[-272px]' : 'ml-0'}`}>
+          <div className={`${styles.side} ${styles.small_screen} trans  ${barBoolean ? 'ml-[-272px]' : 'ml-0'}`}>
             <Sidebar />
           </div>
         </div>
@@ -34,7 +34,7 @@ function Layout({ children }) {
         </main>
       </div>
       {/* OVERLAY BACKGROUND  */}
-      <div className={`${styles.overlay} ${barBoolean? 'hidden': 'block'}`} onClick={handleOverlay}></div>
+      <div className={`${styles.overlay} trans ${barBoolean? 'invisible': 'visible'}`} onClick={handleOverlay}></div>
     </>
   )
 }

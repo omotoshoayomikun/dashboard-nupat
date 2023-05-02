@@ -39,7 +39,7 @@ function Dashboard() {
       <div className={styles.container}>
         <section className={styles.top_section}>
           <section className='df jc-sb ai-c fw-w mb-[47px]'>
-            <div>
+            <div className='mr-5'>
               <div className={`mb-[10px] ${styles.txt1}`}>New Campaign Run </div>
               <div className={`mb-[10px] ${styles.txt2}`}>A new campaign launch work for brand new featur in May month</div>
             </div>
@@ -49,7 +49,7 @@ function Dashboard() {
           </section>
 
           <section className='df jc-sb ai-c fw-w '>
-            <div className="df ai-c mb-[10px]">
+            <div className="df ai-c mb-[10px] mr-5">
               <div className="df ai-c p-r fw-w ">
                 {
                   members.map((member, i) => (

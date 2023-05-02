@@ -30,8 +30,8 @@ function Header() {
                 <div className="" style={{ width: '208px' }}>
                     <Button text='Welcome Keerthi' icon='/icons/light.svg' />
                 </div>
-                <div className="" onClick={handleToggle}>
-                    icons
+                <div className="cursor-pointer h-[30px] w-12 relative" onClick={handleToggle}>
+                    <span className={`menu_btn__burger  ${view ? 'open': ''}`}></span>
                 </div>
             </header>
             {/* //////////////////////////////////////////// */}

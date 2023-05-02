@@ -31,7 +31,7 @@
 }
 
 .overlay {
-    display: none;
+    visibility: hidden;
 }
 
 
@@ -47,7 +47,7 @@
     }
 
     .overlay {
-        display: block;
+        visibility: visible;
         position: fixed;
         left: 0;
         top: 0;
