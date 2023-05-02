@@ -6,15 +6,15 @@ The project structure is organized as follows:
 
 ```
 src/
-
-|-- Forms/
-|   |-- Button.jsx
-|   |-- Card.jsx
-|   |-- Progress.jsx
-|-- layout/
-|   |-- Layout.jsx
-|   |-- Sidebar.jsx
-|-- Dashboard.jsx
+|-- components/
+    |-- Forms/
+    |   |-- Button.jsx
+    |   |-- Card.jsx
+    |   |-- Progress.jsx
+    |-- layout/
+    |   |-- Layout.jsx
+    |   |-- Sidebar.jsx
+    |-- Dashboard.jsx
 |-- ...
 
 ```
@@ -49,6 +49,8 @@ During the course of development, the following difficulties were encountered:
 **Component Reusability:** Ensuring that components are highly reusable and maintainable requires careful planning and structuring of the codebase. Identifying common patterns and creating reusable components can be challenging.
 
 **Responsive Layout:** Implementing a responsive layout that adapts to different screen sizes and devices can be challenging. Ensuring that the layout looks good and functions properly on various devices and browsers requires careful consideration of CSS Flexbox/Grid, and other responsive design techniques.
+
+**State Management:** Managing the state of the menu bar, including component communication, can be complex. Choosing the right state management solution (such as Redux, react-redux, @reduxjs/toolkit, MobX, or React Context) and implementing it effectively requires careful planning and consideration.
 
 ### Conclusion
 
