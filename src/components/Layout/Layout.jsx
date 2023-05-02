@@ -1,17 +1,41 @@
 import React from 'react'
 import Sidebar from './Sidebar'
 import styles from '../../styles/Layout.module.css'
+import Header from './Header'
+import { useDispatch, useSelector } from 'react-redux'
+import { handleSlide } from '../../../redux/slideSlice'
 
-function Layout({children}) {
+
+function Layout({ children }) {
+  const dispatch = useDispatch()
+
+  const barBoolean = useSelector(state => state.slide.bar)
+
+  const handleOverlay = () => {
+    dispatch(handleSlide(false))
+  }
+
   return (
-    <div className={styles.container}>
-        <div className={styles.side}>
-        <Sidebar />
+    <>
+      <div className="z-30 relative">
+        <Header />
+      </div>
+      <div className={styles.container}>
+        <div className={``}>
+          {/* SIDE BAR FOR BIG SCREEN */}
+          <div className={`${styles.side} ${styles.big_screen}`}><Sidebar /></div>
+          {/* SIDE BAR FOR SMALL SCREEN */}
+          <div className={`${styles.side} ${styles.small_screen}  ${barBoolean ? 'ml-[-272px]' : 'ml-0'}`}>
+            <Sidebar />
+          </div>
         </div>
-        <main className={styles.main}>
-            {children}
+        <main className={`${styles.main} `}>
+          {children}
         </main>
-    </div>
+      </div>
+      {/* OVERLAY BACKGROUND  */}
+      <div className={`${styles.overlay} ${barBoolean? 'hidden': 'block'}`} onClick={handleOverlay}></div>
+    </>
   )
 }
 

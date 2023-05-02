@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --navy-blue: #1D1042;
   --white: #FFFFFF;

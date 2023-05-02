@@ -1,3 +1,5 @@
+// import { ReactComponent as DashboardIcon } from './src/assets/icons/dashboard.svg'
+
 export const sideList = [
     {
         icon: '/icons/dashboard.svg',

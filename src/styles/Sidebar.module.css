@@ -7,6 +7,7 @@
 }
 
 .nvmb {
+    display: block;
     margin-bottom: 24px;
 }
 
@@ -61,4 +62,15 @@
     width: inherit;
     box-sizing: border-box;
     padding: 0 32px;
+}
+
+@media screen and (max-width: 1082px) {
+    .side_container {
+        /* padding-top: 0; */
+    }
+
+    .nvmb {
+        margin-bottom: 0;
+        display: none;
+    }
 }
