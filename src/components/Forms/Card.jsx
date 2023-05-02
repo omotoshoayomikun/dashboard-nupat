@@ -71,8 +71,8 @@ export const SubCard = (props) => {
     return (
         <>
             <div className={styles.todo}>
-                <span>{props.title}</span>
-                <div className={styles.badge}>{props.num}</div>
+                <span>{props.data.title}</span>
+                <div className={styles.badge}>{props.data.num}</div>
             </div>
         </>
     )

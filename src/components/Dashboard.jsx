@@ -34,20 +34,14 @@ function Dashboard() {
     },
   ]
 
-  const subCard = [
-    {title:'To Do', num:'3'},
-    {title:'Inprogress', num:'1'},
-    {title:'Completed', num:'2'},
-  ]
-
   return (
     <>
       <div className={styles.container}>
         <section className={styles.top_section}>
-          <section className='df jc-sb ai-c fw-w mb-57'>
+          <section className='df jc-sb ai-c fw-w mb-[47px]'>
             <div>
-              <div className={styles.txt1}>New Campaign Run </div>
-              <div className={` ${styles.txt2}`}>A new campaign launch work for brand new featur in May month</div>
+              <div className={`mb-[10px] ${styles.txt1}`}>New Campaign Run </div>
+              <div className={`mb-[10px] ${styles.txt2}`}>A new campaign launch work for brand new featur in May month</div>
             </div>
             <div>
               <BtnBlack text='ADD MEMBERS' />
@@ -55,7 +49,7 @@ function Dashboard() {
           </section>
 
           <section className='df jc-sb ai-c fw-w '>
-            <div className="df ai-c">
+            <div className="df ai-c mb-[10px]">
               <div className="df ai-c p-r fw-w ">
                 {
                   members.map((member, i) => (
@@ -66,7 +60,7 @@ function Dashboard() {
               <div className={styles.txt2}>8 member</div>
 
             </div>
-            <div className="df ai-c fw-w ">
+            <div className="df ai-c fw-w mb-[10px] ">
               {
                 navs.map((nav, i) => (
                   <a href='#' key={i} className={styles.cont_list}>
@@ -80,27 +74,22 @@ function Dashboard() {
         </section>
 
         <section className={styles.main_section}>
-          <div className="df gap-40 fw-w ">
-            {
-              subCard.map((sub, i) => (
-                <div key={i} className="flex-1"><SubCard {...sub} /></div>
-              ))
-            }
-          </div>
-
-          <div className="df gap-40">
-            <div className='flex-1'>
-              <Card image='/imgs/card_image1.png' title='Highfidelity Design' progress={{perc: '0', color: ''}} />
-              <Card title='Usability testing' progress={{perc: '0', color: ''}}/>
+          <div className={styles.flexbn}>
+            <div className={styles.flexes}>
+              <SubCard data={{ title: 'To Do', num: '3' }} />
+              <Card image='/imgs/card_image1.png' title='Highfidelity Design' progress={{ perc: '0', color: '' }} />
+              <Card title='Usability testing' progress={{ perc: '0', color: '' }} />
               <BtnAdd text='Add Task' icon='/icons/add.svg' />
             </div>
-            <div className='flex-1'>
-              <Card image='/imgs/card_image2.png'  title='Highfidelity Design' progress={{perc: '70%', color: '#FF5F37'}} />
+            <div className={styles.flexes}>
+              <SubCard data={{ title: 'Inprogress', num: '1' }} />
+              <Card image='/imgs/card_image2.png' title='Highfidelity Design' progress={{ perc: '70%', color: '#FF5F37' }} />
               <BtnAdd text='Add Task' icon='/icons/add.svg' />
             </div>
-            <div className='flex-1'>
-              <Card title='Usability testing' progress={{perc: '100%', color: '#8BC488'}} />
-              <Card image='/imgs/card_image3.png' title='Highfidelity Design' progress={{perc: '100%', color: '#8BC488'}}  />
+            <div className={styles.flexes}>
+              <SubCard data={{ title: 'Completed', num: '2' }} />
+              <Card title='Usability testing' progress={{ perc: '100%', color: '#8BC488' }} />
+              <Card image='/imgs/card_image3.png' title='Highfidelity Design' progress={{ perc: '100%', color: '#8BC488' }} />
               <BtnAdd text='Add Task' icon='/icons/add.svg' />
             </div>
           </div>
