@@ -16,7 +16,7 @@ export const Card = (props) => {
             <div className={`mb-16 ${styles.card}`}>
                 {
                     props.image && (
-                        <img src={props.image} alt="" />
+                        <img className={styles.card_img} src={props.image} alt="" />
                     )
                 }
                 <div className={`df jc-sb ${props.image? 'mt-18' : ''} `}>

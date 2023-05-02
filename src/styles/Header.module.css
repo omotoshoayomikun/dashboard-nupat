@@ -6,6 +6,7 @@
 @media screen and (max-width: 1082px) {
     .header {
         display: flex;
+        position: fixed;
         justify-content: space-between;
         align-items: center;
         color: #fff;
@@ -14,5 +15,7 @@
         padding: 0px 20px;
         background-color: var(--navy-blue);
         z-index: 8000;
+        top: 0;
+        left: 0;
     }
 }

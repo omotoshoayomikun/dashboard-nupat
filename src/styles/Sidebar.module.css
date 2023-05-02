@@ -66,11 +66,15 @@
 
 @media screen and (max-width: 1082px) {
     .side_container {
-        /* padding-top: 0; */
+        padding-top: 0;
     }
 
     .nvmb {
         margin-bottom: 0;
         display: none;
+    }
+
+    .side_foot {
+        bottom: 80px;
     }
 }

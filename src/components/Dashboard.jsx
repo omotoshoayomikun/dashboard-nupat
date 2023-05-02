@@ -60,7 +60,7 @@ function Dashboard() {
               <div className={styles.txt2}>8 member</div>
 
             </div>
-            <div className="df ai-c fw-w mb-[10px] ">
+            <div className={styles.na_grid}>
               {
                 navs.map((nav, i) => (
                   <a href='#' key={i} className={styles.cont_list}>

@@ -17,15 +17,15 @@ function Layout({ children }) {
 
   return (
     <>
-      <div className="z-30 relative">
+      <div className="z-30">
         <Header />
       </div>
       <div className={styles.container}>
         <div className={``}>
           {/* SIDE BAR FOR BIG SCREEN */}
-          <div className={`${styles.side} ${styles.big_screen}`}><Sidebar /></div>
+          <div className={` ${styles.big_screen}`}><Sidebar /></div>
           {/* SIDE BAR FOR SMALL SCREEN */}
-          <div className={`${styles.side} ${styles.small_screen} trans  ${barBoolean ? 'ml-[-272px]' : 'ml-0'}`}>
+          <div className={`${styles.small_screen} trans  ${barBoolean ? 'ml-[-272px]' : 'ml-0'}`}>
             <Sidebar />
           </div>
         </div>

@@ -76,6 +76,14 @@
     gap: 40px;
 }
 
+
+.na_grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
 @media screen and (max-width: 1082px) {
     .top_section {
         padding: 40px 40px 25px 40px;
@@ -89,6 +97,19 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .na_grid {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 10px;
+        justify-self: space-between;
+        row-gap: 15px;
     }
 }
 
