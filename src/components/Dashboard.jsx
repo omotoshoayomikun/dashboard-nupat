@@ -65,7 +65,7 @@ function Dashboard() {
                 navs.map((nav, i) => (
                   <a href='#' key={i} className={styles.cont_list}>
                     <img src={nav.icon} alt='' />
-                    <span>{nav.text}</span>
+                    <span className='whitespace-nowrap'>{nav.text}</span>
                   </a>
                 ))
               }

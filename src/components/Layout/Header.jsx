@@ -11,15 +11,15 @@ function Header() {
 
     const barBoolean = useSelector(state => state.slide.bar)
 
-    const [view, setView] = useState(!barBoolean)
+    const [view, setView] = useState(barBoolean)
 
     useEffect(() => {
-        console.log('refresh header')
+        
     }, [barBoolean])
 
     const handleToggle = () => {
         setView(!view)
-        dispatch(handleSlide(view))
+        dispatch(handleSlide(!barBoolean))
     }
 
     return (
@@ -31,7 +31,7 @@ function Header() {
                     <Button text='Welcome Keerthi' icon='/icons/light.svg' />
                 </div>
                 <div className="cursor-pointer h-[30px] w-12 relative" onClick={handleToggle}>
-                    <span className={`menu_btn__burger  ${view ? 'open': ''}`}></span>
+                    <span className={`menu_btn__burger  ${barBoolean ? '': 'open'}`}></span>
                 </div>
             </header>
             {/* //////////////////////////////////////////// */}
